@@ -20,5 +20,7 @@ jobs:
           python-version: 3.9
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
+      - name: Check files
+        run: ls -h
       - name: Run unit test
         run: python -m pytest .\tests.py
